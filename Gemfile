@@ -46,3 +46,6 @@ end
 
 # Use Twitter Bootstrap
 gem 'twitter-bootstrap-rails'
+
+# Use Rspec
+gem 'rspec-rails'
