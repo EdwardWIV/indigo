@@ -1,0 +1,82 @@
+<h5>Meetings / Events</h5>
+<ul>
+  <li><a href='#sendMessageModal' data-toggle='modal'>Open House Sign Up</a></li>
+  <li>Child Evaluation</li>
+</ul>
+
+<h5>Forms</h5>
+<ul>
+  <li>Media Release</li>
+  <li>Emergency Contacts</li>
+  <li>Contract Agreement</li>
+</ul>
+
+<h5>Reminders</h5>
+<ul>
+  <li>Enrollment Deadline</li>
+  <li>Fees Due</li>
+</ul>
+
+<br>
+<a href='#'>Add new template</a>
+
+<!-- Modal -->
+<div id='sendMessageModal' class='modal hide fade' tabindex='-1'>
+  <div class='modal-header'>
+    <button type='button' class='close' data-dismiss='modal'>×</button>
+    <h3 id='myModalLabel'>New Message</h3>
+  </div>
+  <div class='modal-body'>
+    <form>
+      <fieldset class='row-fluid'>
+        <div class='span2'>
+          <h5>To:</h5>
+        </div>
+        <div class='span10'>
+          <label class='checkbox inline'>
+            <input type='checkbox' checked> Sara Rossi
+          </label>
+          <label class='checkbox inline'>
+            <input type='checkbox' checked> Alberto Rossi
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class='row-fluid'>
+        <div class='span2'>
+          <h5>Cc:</h5>
+        </div>
+        <div class='span10'>
+          <input type='text' class='input-xlarge'>
+        </div>
+      </fieldset>
+      <fieldset class='row-fluid'>
+        <div class='span2'>
+          <h5>Bcc:</h5>
+        </div>
+        <div class='span10'>
+          <input type='text' class='input-xlarge'>
+        </div>
+      </fieldset>
+      <fieldset class='row-fluid'>
+        <div class='span2'>
+          <h5>Subject:</h5>
+        </div>
+        <div class='span10'>
+          <input type='text' class='input-xlarge' value='Open House Sign Up'>
+        </div>
+      </fieldset>
+      <fieldset class='row-fluid'>
+        <div class='span2'>
+          <h5>Body:</h5>
+        </div>
+        <div class='span10'>
+          <textarea rows='7'><%= @template %></textarea>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div class='modal-footer'>
+    <button class='btn' data-dismiss='modal'>Close</button>
+    <button class='btn btn-primary'>Send</button>
+  </div>
+</div>

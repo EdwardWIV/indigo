@@ -99,14 +99,14 @@
         </div><!--/span-->
         <div class="span9">
           <ul class='nav nav-pills'>
-            <li class='active'>
-              <a href='#'>Profile</a>
+            <li class='<%= "active" if @profile_nav_pill %>'>
+              <a href='/'>Rossi's Family</a>
             </li>
             <li>
               <a href='#'>Admission Criteria</a>
             </li>
-            <li>
-              <a href='#'>Send Message</a>
+            <li class='<%= "active" if @message_nav_pill %>'>
+              <a href='/messages/new'>Send Message</a>
             </li>
             <li>
               <a href='#'>Generate Report</a>
