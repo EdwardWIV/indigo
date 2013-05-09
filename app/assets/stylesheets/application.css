@@ -12,6 +12,10 @@
  *= require_self
  */
 
+.navbar .brand {
+	color: rgb(119, 8, 201);
+}
+
 .well {
 	min-height: 400px;
 }
