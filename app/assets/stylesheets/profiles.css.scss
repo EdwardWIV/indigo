@@ -1,3 +1,30 @@
 // Place all the styles related to the profiles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.nav-pills > li {
+  margin-right: 10px;
+}
+
+.thumbnail {
+	position: relative;
+	h4 {
+		margin: 5px 0;
+	}
+	dl {
+		margin: 0;
+	}
+	dt, dd {
+		display: inline-block;
+		margin: 0;
+	}
+	i {
+		font-size: 2em;
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
