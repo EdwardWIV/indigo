@@ -47,9 +47,32 @@
           <a class="brand" href="#">Indigo</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+							<li class='divider-vertical'></li>
+              <li class='dropdown'>
+								<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Families <b class='caret'></b></a>
+							  <ul class='dropdown-menu'>
+									<li><%= link_to 'Profiles', '#' %></li>
+									<li><%= link_to 'Tuitions', '#' %></li>
+							  </ul>
+							</li>
+							<li class='divider-vertical'></li>
+              <li><%= link_to 'Admissions', '#' %></li>
+							<li class='divider-vertical'></li>
+              <li class='dropdown'>
+								<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Employees <b class='caret'></b></a>
+							  <ul class='dropdown-menu'>
+									<li><%= link_to 'Profiles', '#' %></li>
+		              <li><%= link_to 'Payroll', '#' %></li>
+		              <li><%= link_to 'Resources', '#' %></li>
+							  </ul>
+							</li>
+							<li class='divider-vertical'></li>
+              <li><%= link_to 'Accounting', '#' %></li>
+							<li class='divider-vertical'></li>
+              <li><%= link_to 'Fundraising', '#' %></li>
+							<li class='divider-vertical'></li>
+              <li><%= link_to 'Media', '#' %></li>
+							<li class='divider-vertical'></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
