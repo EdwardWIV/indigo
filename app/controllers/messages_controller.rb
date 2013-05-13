@@ -13,4 +13,12 @@ Dunja Solari
 La Scuola
 HEREDOC
   end
+  
+  def create
+    UserMailer.test_email.deliver
+    render nothing: true, status: 200
+  rescue
+    render nothing: true, status: 400
+  end
+  
 end

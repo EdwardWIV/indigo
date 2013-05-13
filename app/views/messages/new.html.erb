@@ -24,12 +24,12 @@
 
 <!-- Modal -->
 <div id='sendMessageModal' class='modal hide fade' tabindex='-1'>
-  <div class='modal-header'>
-    <button type='button' class='close' data-dismiss='modal'>×</button>
-    <h3 id='myModalLabel'>New Message</h3>
-  </div>
-  <div class='modal-body'>
-    <form>
+  <form action='/messages' method='post' data-remote='true'>
+    <div class='modal-header'>
+      <button type='button' class='close' data-dismiss='modal'>×</button>
+      <h3 id='myModalLabel'>New Message</h3>
+    </div>
+    <div class='modal-body'>
       <fieldset class='row-fluid'>
         <div class='span2'>
           <h5>To:</h5>
@@ -75,10 +75,10 @@
           <textarea rows='7'><%= @template %></textarea>
         </div>
       </fieldset>
-    </form>
-  </div>
-  <div class='modal-footer'>
-    <button class='btn' data-dismiss='modal'>Close</button>
-    <button class='btn btn-primary'>Send</button>
-  </div>
+    </div>
+    <div class='modal-footer'>
+      <button class='btn' data-dismiss='modal'>Close</button>
+      <button class='btn btn-primary' data-disable-with='Sending...'>Send</button>
+    </div>
+  </form>
 </div>

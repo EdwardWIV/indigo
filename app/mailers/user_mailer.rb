@@ -4,7 +4,7 @@ class UserMailer < ActionMailer::Base
   def test_email
     mail(
       to: 'Giada Barbini <giada.barbini@gmail.com>',
-      subject: '8th email'
+      subject: 'Open House Sign Up'
     )
   end
 end
